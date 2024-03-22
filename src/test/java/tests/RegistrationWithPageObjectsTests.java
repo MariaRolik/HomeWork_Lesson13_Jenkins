@@ -1,17 +1,13 @@
 package tests;
-
-import com.codeborne.selenide.logevents.SelenideLogger;
-import io.qameta.allure.selenide.AllureSelenide;
-import pages.RegistrationPage;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import pages.RegistrationPage;
 
-
-public class RegistrationWithPageObjects extends TestBase{
+public class RegistrationWithPageObjectsTests extends TestBase{
     RegistrationPage registrationPage = new RegistrationPage();
     @Test
+    @DisplayName("Заполнение и проверка данных всех полей")
     void successfulRegistrationTest(){
-        SelenideLogger.addListener("allure", new AllureSelenide());
-
         registrationPage.openPage()
                 .setFirstName("Иван")
                 .setLastName("Иванов")
@@ -40,8 +36,8 @@ public class RegistrationWithPageObjects extends TestBase{
 
 
     @Test
+    @DisplayName("Заполнение и проверка данных только обязательных полей")
     void fillRequiredFields(){
-        SelenideLogger.addListener("allure", new AllureSelenide());
         registrationPage.openPage()
                 .setFirstName("Иван")
                 .setLastName("Иванов")
@@ -55,8 +51,8 @@ public class RegistrationWithPageObjects extends TestBase{
 
 
     @Test
+    @DisplayName("Валидация обязательных полей")
     void checkValidationEmptyFields(){
-        SelenideLogger.addListener("allure", new AllureSelenide());
         registrationPage.openPage()
                 .clickSubmit()
                 .checkValidation();
