@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.RegistrationWithPageObjectsTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-03-22T20:51:50" hostname="DESKTOP-2MPT1VG" time="38.785">
-  <properties/>
-  <testcase name="Заполнение и проверка данных только обязательных полей" classname="tests.RegistrationWithPageObjectsTests" time="15.384"/>
-  <testcase name="Валидация обязательных полей" classname="tests.RegistrationWithPageObjectsTests" time="3.424"/>
-  <testcase name="Заполнение и проверка данных всех полей" classname="tests.RegistrationWithPageObjectsTests" time="19.635"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
