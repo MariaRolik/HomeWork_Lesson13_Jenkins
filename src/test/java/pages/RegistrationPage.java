@@ -74,7 +74,7 @@ public class RegistrationPage {
         return this;
     }
 
-    @Step("Выбрать дату рождения: {0}")
+    @Step("Выбрать дату рождения: {0} {1} {2}")
     public RegistrationPage setDateOfBirth(String day, String month, String year) {
         calendarInput.click();
         calendarComponent.setDate(day, month, year);
