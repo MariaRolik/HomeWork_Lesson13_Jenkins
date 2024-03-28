@@ -1,13 +1,17 @@
 package tests;
+
+import pages.RegistrationPage;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import pages.RegistrationPage;
 
 public class RegistrationWithPageObjectsTests extends TestBase{
     RegistrationPage registrationPage = new RegistrationPage();
     @Test
     @DisplayName("Заполнение и проверка данных всех полей")
     void successfulRegistrationTest(){
+
+
+
         registrationPage.openPage()
                 .setFirstName("Иван")
                 .setLastName("Иванов")
