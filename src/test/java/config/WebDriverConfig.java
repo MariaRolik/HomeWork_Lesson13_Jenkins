@@ -2,22 +2,24 @@ package config;
 
 import org.aeonbits.owner.Config;
 
-@Config.Sources("classpath:config/driver.properties")
-public interface DriverConfig extends Config {
+@Config.Sources("classpath:config/local.properties")
+public interface WebDriverConfig extends Config {
     @Key("browser.name")
-    @DefaultValue("chrome")
+    @DefaultValue("firefox")
     String browserName();
+
     @Key("browser.version")
-    @DefaultValue("100")
+    @DefaultValue("99.0")
     String browserVersion();
+
     @Key("browser.size")
     @DefaultValue("1920x1080")
     String browserSize();
+
     @Key("browser.remote.url")
-    @DefaultValue("https://user1:1234@selenoid.autotests.cloud/wd/hub")
     String browserRemoteUrl();
-    @Key("browser.page.Load.Strategy")
+
+    @Key("page.load.strategy")
     @DefaultValue("eager")
     String pageLoadStrategy();
-
 }
