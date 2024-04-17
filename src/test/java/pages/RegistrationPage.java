@@ -1,8 +1,8 @@
 package pages;
 
 import com.codeborne.selenide.SelenideElement;
-import components.CalendarComponent;
-import components.ModalWindowComponent;
+import pages.components.CalendarComponent;
+import pages.components.ModalWindowComponent;
 import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Condition.*;

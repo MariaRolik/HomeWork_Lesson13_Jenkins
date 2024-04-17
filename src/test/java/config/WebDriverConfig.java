@@ -5,6 +5,7 @@ import org.aeonbits.owner.Config;
 @Config.Sources("classpath:config/${env}.properties")
 public interface WebDriverConfig extends Config {
     @Key("browser.name")
+    @DefaultValue("chrome")
     String browserName();
 
     @Key("browser.version")
@@ -17,5 +18,6 @@ public interface WebDriverConfig extends Config {
     String browserRemoteUrl();
 
     @Key("page.load.strategy")
+    @DefaultValue("eager")
     String pageLoadStrategy();
 }
