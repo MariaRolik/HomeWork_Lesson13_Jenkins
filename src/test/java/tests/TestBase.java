@@ -1,6 +1,6 @@
 package tests;
 import com.codeborne.selenide.Selenide;
-import components.Attach;
+import utils.Attach;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
 import com.codeborne.selenide.Configuration;
